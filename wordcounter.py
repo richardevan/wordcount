@@ -3,7 +3,7 @@ from collections import Counter
 
 def main():
     filename = "wordcount.txt"
-    infile=open(filename,'r')
+    infile = open(filename,'r')
     words = infile.read().lower()
     word_counter = words.split()
     most_common = Counter(word_counter).most_common(5)
