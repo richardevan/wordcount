@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 def main():
-    filename = "wordcount.txt"
+    filename = input("Enter file name: ")
     infile = open(filename,'r')
     words = infile.read().lower()
     word_counter = words.split()
